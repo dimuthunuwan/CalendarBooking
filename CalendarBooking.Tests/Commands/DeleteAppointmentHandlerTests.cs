@@ -1,10 +1,6 @@
-﻿using System;
-using System.Threading;
-using System.Threading.Tasks;
-using CalendarBooking.Commands;
+﻿using CalendarBooking.Commands;
 using CalendarBooking.Data;
 using Microsoft.EntityFrameworkCore;
-using Xunit;
 
 namespace CalendarBooking.Tests.Commands
 {
