@@ -6,9 +6,15 @@ A simple console application to manage calendar bookings, demonstrating database
 ## Setup
 1. Clone the repository.
 2. Run `dotnet restore` to install dependencies.
-3. Update the database connection string in `BookingContext`.
-4. Run `dotnet run` to start the application.
-5. Use the following commands:
+3. Update the database connection string in `appsettings.json`.
+4. Run `dotnet build` to build the application.
+5.Run the following commands in the Package Manager Console to set up the database:
+
+	```sh
+	Add-Migration InitialCreate
+	Update-Database
+
+6. Use the following commands:
    - `ADD DD/MM hh:mm` to add an appointment.
    - `DELETE DD/MM hh:mm` to remove an appointment.
    - `FIND DD/MM` to find a free timeslot for the day.
