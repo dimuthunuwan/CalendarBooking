@@ -6,6 +6,7 @@ using CalendarBooking.Commands;
 using CalendarBooking.Queries;
 using CalendarBooking.Data;
 using Microsoft.EntityFrameworkCore;
+using System.IO;
 
 var configuration = new ConfigurationBuilder()
     .SetBasePath(Directory.GetCurrentDirectory())
@@ -61,6 +62,7 @@ while (true)
         Console.WriteLine("Invalid command.");
     }
 }
+
 
 
 
